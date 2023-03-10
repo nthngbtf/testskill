@@ -1,0 +1,110 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "firstname": "John",
+      "lastname": "Doe",
+      "Street": " Manila",
+      "province": "Metro Manila",
+      "phoneNumber": "09457566401",
+      "email": "sample@gmail.com",
+      "password": "password",
+      "sex": "male"
+    }
+  ],
+  "employee": [
+    {
+      "emp_num": 1,
+      "user_id": 1,
+      "position": "salesman",
+      "hr_date": "17-DEC-2021"
+    }
+  ],
+  "time_records": [
+    {
+      "time": "10:04:51 PM",
+      "emp_num": 1,
+      "date": "Friday, March 10, 2023",
+      "clock_out": " ",
+      "type": "PunchIn",
+      "id": 5
+    },
+    {
+      "time": "10:07:06 PM",
+      "emp_num": 1,
+      "date": "Friday, March 10, 2023",
+      "type": "PunchIn",
+      "id": 6
+    },
+    {
+      "time": "10:11:11 PM",
+      "emp_num": 1,
+      "date": "Friday, March 10, 2023",
+      "type": "PunchIn",
+      "id": 7
+    },
+    {
+      "time": "10:11:14 PM",
+      "emp_num": 1,
+      "date": "Friday, March 10, 2023",
+      "type": "PunchIn",
+      "id": 8
+    },
+    {
+      "time": "10:11:29 PM",
+      "emp_num": 1,
+      "date": "Friday, March 10, 2023",
+      "type": "PunchOut",
+      "id": 9
+    },
+    {
+      "time": "10:11:39 PM",
+      "emp_num": 1,
+      "date": "Friday, March 10, 2023",
+      "type": "PunchIn",
+      "id": 10
+    },
+    {
+      "time": "10:12:27 PM",
+      "emp_num": 1,
+      "date": "Friday, March 10, 2023",
+      "type": "PunchOut",
+      "id": 11
+    },
+    {
+      "time": "10:12:35 PM",
+      "emp_num": 1,
+      "date": "Friday, March 10, 2023",
+      "type": "PunchOut",
+      "id": 12
+    },
+    {
+      "time": "10:12:39 PM",
+      "emp_num": 1,
+      "date": "Friday, March 10, 2023",
+      "type": "PunchIn",
+      "id": 13
+    },
+    {
+      "time": "10:14:03 PM",
+      "emp_num": 1,
+      "date": "Friday, March 10, 2023",
+      "type": "PunchOut",
+      "id": 14
+    },
+    {
+      "time": "10:14:07 PM",
+      "emp_num": 1,
+      "date": "Friday, March 10, 2023",
+      "type": "PunchIn",
+      "id": 15
+    },
+    {
+      "time": "10:14:15 PM",
+      "emp_num": 1,
+      "date": "Friday, March 10, 2023",
+      "type": "PunchOut",
+      "id": 16
+    }
+  ]
+}

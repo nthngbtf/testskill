@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { useFetchUserQuery } from "./store";
+import Sidebar from "./pages/Sidebar";
+import Skeleton from "./components/Skeleton";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const user = [
+    {
+      id: 1,
+    },
+  ];
+  const { data, error, isFetching, isLoading } = useFetchUserQuery(user);
+
+  let content;
+  if (isLoading) {
+    content = <Skeleton times={6} className="h-10 w-full" />;
+  } else {
+    content = (
+      <>
+        <Sidebar userInfo={data} />
+        <Dashboard userInfo={data} />
+      </>
+    );
+  }
+
+  return content;
 }
 
 export default App;
